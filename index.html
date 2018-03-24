@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name=referrer content=never>
+	<link href="favicon.ico" mce_href="favicon.ico" rel="shortcut icon"  type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="styles/homePageLayout.css">
+	<link rel="stylesheet" type="text/css" href="styles/nav.css">
+	<link rel="stylesheet" type="text/css" href="styles/section.css">
+	<script type="text/javascript" src="script/navStyle.js"></script>
+	<script type="text/javascript" src="script/secHomeImg.js"></script>
+	<script type="text/javascript" src="script/secMovie.js"></script>
+	<script type="text/javascript" src="script/secNews.js"></script>
+	<script type="text/javascript" src="script/secDiary.js"></script>
+	<script type="text/javascript" src="script/secMessage.js"></script>
+	<title>myBlog</title>
+	<script type="text/javascript">
+		function getClientWidth() {  
+		    var clientWidth = document.documentElement.clientWidth  || document.body.clientWidth;  
+		    return clientWidth;  
+		}
+		function smallWindow(){
+			var oLink = document.createElement('link');
+			oLink.rel="stylesheet";
+			oLink.type="text/css";
+			oLink.href="styles/smallWindow.css";
+			document.head.appendChild(oLink);
+		}
+		function largeWindow(){
+			var oLink = document.createElement('link');
+			oLink.rel="stylesheet";
+			oLink.type="text/css";
+			oLink.href="styles/largeWindow.css";
+			document.head.appendChild(oLink);
+		}
+		if(Number(getClientWidth())<975){
+			smallWindow();
+		}else{
+			largeWindow();
+		}
+		window.onload = function (){
+			
+			navStyle();	//导航
+			secHomeImg();	//轮播图
+			secMovie();	//豆瓣电影精选
+			secNews();	//前端资讯
+			secDiary();	//本地存储、日记
+			secMessage();	//留言
+		}
+	</script>
+</head>
+<body>
+	<aside class="aside_1">
+		<!-- 导航 -->
+		<nav>
+			<a href="javascript:;">img</a>
+			<a href="javascript:;">首页</a>
+			<a href="javascript:;">个人简介</a>
+			<a href="javascript:;">掌握的前端技能</a>
+			<a href="javascript:;">豆瓣精选电影推荐</a>
+			<a href="javascript:;">前端资讯</a>
+			<a href="javascript:;">随笔、日记、本地存储</a>
+			<a href="javascript:;">留言</a>
+		</nav>
+		<!-- 页首 -->
+		<section>
+			<div>
+				<img src="">
+				<img src="">
+				<span>这是一个轮播图！</span>
+				<a href="javascript:;"></a>
+				<a href="javascript:;"></a>
+			</div>
+		</section>
+		<!-- 个人简介 -->
+		<section>
+			<h1>个人简介</h1>
+			<div>
+				<span class="perHead">About Me<em></em></span>
+				<img src="img/section1_img/myPhoto.jpg" />
+				<ul>
+					<li><em class="perEm_1">姓名：</em><span class="perInformation_1">杨顺强</span></li>
+					<li><em class="perEm_2">出生日期：</em><span class="perInformation_1 perInformation_2">1989/08/01</span></li>
+					<li><em class="perEm_1">职业：</em><span class="perInformation_1">业务员</span></li>
+					<li><em class="perEm_1">学历：</em><span class="perInformation_1">本科</span></li>
+					<li><em class="perEm_1">婚否：</em><span class="perInformation_1">否</span></li>
+				</ul>
+				<ul>
+					<li><em class="perEm_1">星座：</em><span class="perInformation_1">狮子座</span></li>
+					<li><em class="perEm_1">现居：</em><span class="perInformation_1">厦门湖里区</span></li>
+					<li><em class="perEm_1">QQ：</em><span class="perInformation_1">319320006</span></li>
+					<li><em class="perEm_1">爱好：</em><span class="perInformation_1">篮球、游泳</span></li>
+					<li><em class="perEm_1">籍贯：</em><span class="perInformation_1">河北</span></li>
+				</ul>
+				<span class="perFooter">
+					<span>MoranYang</span>
+					<span>Phone:13860171131</span>
+					<span>E-mail:319320006@qq.com</span>
+				</span>
+			</div>
+		</section>
+		<!-- 前端技能 -->
+		<section>
+			<h1>掌握的前端技能</h1>
+			<div>
+				<article>
+					<img src="img/section2_img/htmlLogo.jpg">
+					<div>
+						<h2>HTML</h2>
+						<p>基本掌握meta、link、title、script、style标签的使用；了解H5语义化标签；了解单列、多列、全屏、响应式等布局；对于好的文档结构对页面的影响有深刻的体会。</p>
+					</div>
+				</article>
+				<article>
+					<img src="img/section2_img/cssLogo.jpg">
+					<div>
+						<h2>CSS</h2>
+						<p>熟练掌握CSS2；基本掌握CSS3，在盒模型、动画、2D/3D转换等方面都有一定的了解。对于文档结构与表现形式分离的优点有深刻的体会。</p>
+					</div>
+				</article>
+				<article>
+					<img src="img/section2_img/jsLogo.jpg">
+					<div>
+						<h2>JS</h2>
+						<p>能够动态的创建、增加、修改、删除页面内容；利用事件提高网页的交互性，提升用户体验；实现一些简单的动画效果。</p>
+					</div>
+				</article>
+			</div>
+		</section>
+		<!-- 电影 -->
+		<section>
+			<h1>豆瓣精选电影推荐</h1>
+			<a href='javascript:;'>换一批</a>
+			<ul></ul>
+		</section>
+		<!-- 前端资讯 -->
+		<section>
+			<h1>前端资讯</h1>
+			<ul></ul>
+			<span class="sec_5_span"></span>
+		</section>
+		<!-- 随笔 -->
+		<section>
+			<h1>随笔、日记、本地存储</h1>
+			<article>
+				<ul>
+				</ul>
+			</article>
+			<article>
+				<span>标题：</span><input type="text" /><br />
+				<span>内容：</span><textarea></textarea><br />
+				<span>保存</span>
+				<span>删除所有</span>
+			</article>
+			<article>
+				<span>关闭</span>
+				<span>删除</span>
+				<h2></h2>
+				<p></p>
+			</article>
+		</section>
+		<!-- 留言 -->
+		<section>
+			<h1>留言</h1>
+			<span>xx条评论</span>
+			<ul></ul>
+			<article>
+				<h2>发表评论</h2>
+				<article>
+					<span>名称(必填)</span><input type="text" />
+				</article>
+				<article>
+					<span>内容(必填)</span><textarea></textarea>
+				</article>				
+				<span>提交</span>
+			</article>
+		</section>
+		<footer>by MoranYang</footer>
+	</aside>
+</body>
+</html>

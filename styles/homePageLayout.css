@@ -1,0 +1,13 @@
+/*样式重置*/
+body,h1,h2,h3,h4,h5,h6,p,dl,dd,ul,ol,pre,form,input,textarea,th,td,select{ margin:0;padding:0}
+em{ font-style:normal;}
+li{ list-style:none;}
+a{  text-decoration:none;}
+img{ border:none;vertical-align:top;}
+table{ border-collapse:collapse;}
+textarea{ resize:none;overflow:auto;}
+
+body{background-color: #195f88;margin: 0;font:15px "微软雅黑","Arial";}
+aside{margin: 0 auto;}
+nav{width: 220px;float: left;z-index: 10;}
+section,footer{width: 755px;overflow: hidden;}
